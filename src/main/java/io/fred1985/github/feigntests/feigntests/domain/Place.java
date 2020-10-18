@@ -1,0 +1,30 @@
+package io.fred1985.github.feigntests.feigntests.domain;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import java.io.Serializable;
+
+@Entity
+@Data
+public class Place implements Serializable {
+
+    @JsonProperty("cep")
+    private String cep;
+
+    @JsonProperty("logradouro")
+    private String logradouro;
+
+    @JsonProperty("complemento")
+    private String complemento;
+
+    @JsonProperty("bairro")
+    private String bairro;
+
+    @JsonProperty("localidade")
+    private String localidade;
+
+    @JsonProperty("uf")
+    private String uf;
+}
