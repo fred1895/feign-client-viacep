@@ -3,10 +3,9 @@ package io.fred1985.github.feigntests.feigntests.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import javax.persistence.Entity;
 import java.io.Serializable;
 
-@Entity
+
 @Data
 public class Place implements Serializable {
 
